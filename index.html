@@ -31,7 +31,7 @@
         height: 50px;
         margin-right: 10px;
         border-radius: 25px;
-        background: #e5ff00;    
+        background: #e5ff00;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -59,19 +59,24 @@
     }
 
     @media only screen and (max-width: 425px) {
-    .img-wrap-main{
-        flex-direction: column;
-    }
+        .welcome {
+            padding: 0;
+            margin: 30px 0;
+        }
 
-    .about__left {
-        width: 100%;
-    }
+        .img-wrap-main {
+            flex-direction: column;
+        }
 
-    .img-wrap-main .img{
-        min-width: 100%;
-        margin: 10px 0;
+        .about__left {
+            width: 100%;
+        }
+
+        .img-wrap-main .img {
+            min-width: 100%;
+            margin: 10px 0;
+        }
     }
-}
 </style>
 
 <body>
@@ -98,7 +103,7 @@
                             Акция действует до конца дня
                         </b>
                         <br>
-                        <b> Скидка 58% </b> 
+                        <b> Скидка 58% </b>
                         <div class="welcome__price">
                             <span class="welcome__price--old"><span class="old-price">699,99</span> byn</span>
                             <span class="welcome__price--new"><span class="new-price">289,99</span> byn</span>
@@ -110,7 +115,7 @@
                         </div>
                         <div class="welcome__description">
                             <p><img src="images/check.png" alt="">Максимальное число оборотов: 2350 об/мин</p>
-                            <p><img src="images/check.png" alt="">Мощность (Вт): 	18 Вт</p>
+                            <p><img src="images/check.png" alt="">Мощность (Вт): 18 Вт</p>
                             <p><img src="images/check.png" alt="">Максимальный диаметр основного патрона (мм): 13 мм</p>
                             <p><img src="images/check.png" alt="">Тип патрона: Быстрозажимной; железный патрон</p>
                             <p><img src="images/check.png" alt="">Минимальный диаметр основного патрона (мм): 13 мм</p>
@@ -128,10 +133,24 @@
                         <img class="about__img" style="border-radius: 10px;" src="images/1.jpg" alt="">
                         <img class="about__img" style="border-radius: 10px;" src="images/6.jpg" alt="">
                     </div>
-                    <div class="about__block">
+                    <div class="about__block" style="text-align: left;">
                         <p class="about__description" style="text-align: left;">
-                            <b>Набор электроинструментов 2 в 1 от Dewalt</b> — это идеальное решение для профессионалов и любителей, которым нужна надежная и долговечная техника. В набор входят шуруповерт и угловая аккумуляторная шлифовальная машина (УШМ, болгарка), которые отличаются высокой мобильностью благодаря двум аккумуляторам и зарядному устройству. Литий-ионные аккумуляторы обеспечивают рекордное количество циклов зарядки, а бесщеточный двигатель обеспечивает высокую скорость и долговечность.
-                            УШМ идеально подходит для различных задач, от шлифовки стен и потолка до резки металла, камня и других материалов. Благодаря эргономичному дизайну и прорезиненной ручке, инструмент обеспечивает комфорт и удобство в использовании.
+                        <p style="margin: 15px 0;"><b>Набор электроинструментов 2 в 1 от Dewalt</b> — это идеальное решение для профессионалов и
+                            любителей, которым нужна надежная и долговечная техника.</p>
+
+                        <p style="margin: 15px 0;">В набор входят шуруповерт и угловая аккумуляторная шлифовальная машина (УШМ, болгарка),
+                            которые отличаются высокой мобильностью благодаря двум аккумуляторам и зарядному устройству.
+                        </p>
+
+                        <p style="margin: 15px 0;">Литий-ионные аккумуляторы обеспечивают рекордное количество циклов зарядки, а бесщеточный
+                            двигатель обеспечивает высокую скорость и долговечность.</p>
+
+                        <p style="margin: 15px 0;">УШМ идеально подходит для различных задач, от шлифовки стен и потолка до резки металла, камня
+                            и других материалов.
+                        </p>
+
+                        <p style="margin: 15px 0;">Благодаря эргономичному дизайну и прорезиненной ручке, инструмент обеспечивает комфорт и
+                            удобство в использовании.</p>
                         </p>
                     </div>
                 </div>
@@ -140,7 +159,8 @@
 
         <section class="about" id="about">
             <div class="container">
-                <div class="about__content" style="display:flex; flex-direction: column; justify-content: space-around;">
+                <div class="about__content"
+                    style="display:flex; flex-direction: column; justify-content: space-around;">
                     <div class="item">
                         <div class="img-wrap">
                             <img src="images/car.png" alt="car">
@@ -186,8 +206,8 @@
                     <form id="tg-form">
                         <input class="form__input" name="name" id="name" type="text" placeholder="Введите имя"
                             required="">
-                        <input class="form__input tel" name="phone" id="phone" type="tel" placeholder="Введите номер телефона"
-                            required="" id="phone">
+                        <input class="form__input tel" name="phone" id="phone" type="tel"
+                            placeholder="Введите номер телефона" required="" id="phone">
                         <button id="btn" class="form__button">Заказать по акции</button>
                         <div class="form__checkbox">
                             <label style="
@@ -247,7 +267,8 @@
         </footer>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js?ver=1.0.0" id="tgsend-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js?ver=1.0.0"
+        id="tgsend-js"></script>
 
     <script>
         const TOKEN = "7515097065:AAFhT2hOYXcnD2_FmoV_wb0HEJ7kfNtqDbs",
