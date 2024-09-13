@@ -15,15 +15,14 @@
 
 <style>
     .img-wrap-main {
-        width: 90%;
+        width: 100%;
         height: 500px;
         display: flex;
         justify-content: space-around;
     }
 
     .img {
-        width: 45%;
-        height: 100%;
+        width: 50%;
         border-radius: 10px;
     }
 
@@ -64,6 +63,10 @@
         flex-direction: column;
     }
 
+    .about__left {
+        width: 100%;
+    }
+
     .img-wrap-main .img{
         min-width: 100%;
         margin: 10px 0;
@@ -76,7 +79,7 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <p class="header__logo-title">Bestbuy.of.by</p>
+                    <p class="header__logo-title">Два по цене одного</p>
                     <span class="header__logo-subtitle">Болгарка + шуруповерт</span>
                 </div>
                 <a class="header__button" href="#tg-form">Заказать</a>
@@ -89,8 +92,8 @@
             <div class="container">
                 <div class="welcome__content">
                     <div class="welcome__block welcome__block--left">
-                        <h1>Набор электроинструментов</h1>
-                        <h2>2 в 1 от Dewalt</h2>
+                        <h1>Набор электроинструментов Dewalt</h1>
+                        <h2>2 товара по цене 1</h2>
                         <b class="line">
                             Акция действует до конца дня
                         </b>
@@ -103,8 +106,7 @@
                     </div>
                     <div class="welcome__block">
                         <div class="img-wrap-main">
-                            <div class="img" style="background: url(images/2.jpg) center center/cover no-repeat;"></div>
-                            <div class="img" style="background: url(images/3.jpg) center center/cover no-repeat;"></div>
+                            <img class="img" src="images/5.PNG" alt="main img">
                         </div>
                         <div class="welcome__description">
                             <p><img src="images/check.png" alt="">Максимальное число оборотов: 2350 об/мин</p>
@@ -124,6 +126,7 @@
                 <div class="about__content">
                     <div class="about__left">
                         <img class="about__img" style="border-radius: 10px;" src="images/1.jpg" alt="">
+                        <img class="about__img" style="border-radius: 10px;" src="images/6.jpg" alt="">
                     </div>
                     <div class="about__block">
                         <p class="about__description" style="text-align: left;">
